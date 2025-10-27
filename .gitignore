@@ -1,0 +1,94 @@
+
+# Vivado project build output
+*.jou
+*.log
+*.str
+*.pb
+*.rpt
+*.dcp
+*.xml
+*.html
+*.wdb
+*.data
+*.csv
+
+# Simulation output
+*.vcd
+*.wcfg
+*.wdb
+*.sim
+*.xsim
+*.xprj
+
+# IP / BD generated files
+*.xci
+*.xcix
+*.xml
+*.xco
+*.gise
+*.ngc
+*.ngd
+*.ncd
+*.bxml
+*.bd.bak
+*.bd.tcl~
+*.runs/
+*.srcs/sources_1/ip/*/example_design/
+*.srcs/sources_1/ip/*/simulation/
+*.ip_user_files/
+*.cache/
+*.hw/
+*.hwdef
+*.xsa
+
+# Vitis workspace and build output
+*.metadata/
+*.sdk/
+*.build/
+*.launch/
+*.dep/
+*.log
+*.elf
+*.map
+*.bin
+*.mss
+*.xml
+*.vitis/
+*.Debug/
+*.Release/
+*.ide/
+
+# Temporary or system files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.lock
+*~
+.DS_Store
+Thumbs.db
+
+# Vivado autosave projects
+*.xpr.autosave
+
+# Exported hardware / handoff files (can regenerate)
+*.hdf
+*.xsa
+
+# Vivado/Vitis caches
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.gen/
+.project/
+
+# Eclipse/Vitis workspace state
+.vscode/
+.settings/
+.project
+.cproject
+.autosave
+
+
+
