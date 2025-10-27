@@ -18,10 +18,7 @@ module mb_usb_hdmi_top(
     //USB signals
     input logic [0:0] gpio_usb_int_tri_i,
     output logic gpio_usb_rst_tri_o,
-    input logic usb_spi_miso,
-    output logic usb_spi_mosi,
-    output logic usb_spi_sclk,
-    output logic usb_spi_ss,
+ 
     
     //UART
     input logic uart_rtl_0_rxd,
@@ -40,7 +37,6 @@ module mb_usb_hdmi_top(
     output logic [3:0] hex_gridB
 );
     
-    logic [31:0] keycode0_gpio, keycode1_gpio;
     logic clk_25MHz, clk_125MHz, clk, clk_100MHz;
     logic locked;
     logic [9:0] drawX, drawY, ballxsig, ballysig, ballsizesig;
@@ -56,7 +52,7 @@ module mb_usb_hdmi_top(
     hex_driver HexA (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[31:28], keycode0_gpio[27:24], keycode0_gpio[23:20], keycode0_gpio[19:16]}),
+        .in(),
         .hex_seg(hex_segA),
         .hex_grid(hex_gridA)
     );
@@ -64,7 +60,7 @@ module mb_usb_hdmi_top(
     hex_driver HexB (
         .clk(Clk),
         .reset(reset_ah),
-        .in({keycode0_gpio[15:12], keycode0_gpio[11:8], keycode0_gpio[7:4], keycode0_gpio[3:0]}),
+        .in(),
         .hex_seg(hex_segB),
         .hex_grid(hex_gridB)
     );

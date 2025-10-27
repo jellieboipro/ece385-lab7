@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4B1D8BD467FD246F",
+      "boundary_crc": "0x4B1D8BD46E840F70",
       "device": "xc7s50csga324-1",
       "gen_directory": "../../../../lab7_1.gen/sources_1/bd/lab7_1",
       "name": "lab7_1",
@@ -955,8 +955,8 @@
           "rst_clk_wiz_1_100M/slowest_sync_clk",
           "axi_uartlite_0/s_axi_aclk",
           "microblaze_0_axi_periph/M01_ACLK",
-          "hdmi_text_controller_0/axi_aclk",
-          "microblaze_0_axi_periph/M02_ACLK"
+          "microblaze_0_axi_periph/M02_ACLK",
+          "hdmi_text_controller_0/axi_aclk"
         ]
       },
       "rst_clk_wiz_1_100M_bus_struct_reset": {

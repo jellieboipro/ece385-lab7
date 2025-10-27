@@ -120,6 +120,7 @@ logic  	axi_rvalid;
 // ADDR_LSB is used for addressing 32/64 bit registers/memories
 // ADDR_LSB = 2 for 32 bits (n downto 2)
 // ADDR_LSB = 3 for 64 bits (n downto 3)
+//TODO: change these for our number of regs
 localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
 localparam integer OPT_MEM_ADDR_BITS = 1;
 //----------------------------------------------
@@ -134,6 +135,7 @@ localparam integer OPT_MEM_ADDR_BITS = 1;
 //Note: the provided Verilog template had the registered declared as above, but in order to give 
 //students a hint we have replaced the 4 individual registers with an unpacked array of packed logic. 
 //Note that you as the student will still need to extend this to the full register set needed for the lab.
+// TODO: Edit this so that we have 604 regs (might not be in this file, check last bit of twitch stream)
 logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[4];
 logic	 slv_reg_rden;
 logic	 slv_reg_wren;
